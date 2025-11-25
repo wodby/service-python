@@ -1,0 +1,104 @@
+name: python
+type: service
+icon: python
+title: Python
+hostname: python
+scalable: true
+labels:
+- python
+options:
+- version: '3.14'
+  default: true
+  eol: '2030-10-31T00:00:00+00:00'
+containers:
+- name: python
+  image: wodby/python
+  main: true
+#  resources:
+#    request:
+#       memory: 128
+#       cpu: 100
+
+endpoints:
+- name: python
+  ports:
+  - name: python
+    number: 8000
+    main: true
+    type: tcp
+
+build:
+  dockerfile: Dockerfile
+  connect: true
+  templates:
+  - name: composer
+    title: Composer boilerplate 
+    repo: https://github.com/wodby/python-boilerplate
+    branch: master
+
+links:
+- name: db
+  title: DBMS
+  required: true
+  env:
+  - name: DB_HOST
+    value: '{{link.database.host}}'
+  - name: DB_PORT
+    value: '{{link.database.port}}'
+  - name: DB_USERNAME
+    value: '{{link.database.user.name}}'
+  - name: DB_NAME
+    value: '{{link.database.db.name}}'
+  - name: DB_DATABASE
+    value: '{{link.database.db.name}}'    
+  - name: DB_PASSWORD
+    value: '{{link.database.user.password}}'
+    secret: true
+  - name: DB_DRIVER
+    value: '{{link.database.driver}}'  
+  - name: DB_CONNECTION
+    value: '{{link.database.driver}}'      
+  selectors:
+  - type: db
+    labels:
+    - mariadb
+  - type: db
+    labels:
+    - mysql
+  - type: db
+    labels:
+    - postgres
+- name: sendmail    
+  title: Mail Transfer Agent
+  required: false
+  env:
+  - name: MSMTP_HOST
+    value: '{{link.host}}'
+  - name: MSMTP_PORT
+    value: '{{link.port}}'
+  selectors:
+  - type: service
+    labels: 
+    - smtpd
+
+integrations:
+- name: variable
+  title: Variable
+  type: variable
+  required: false
+  multiple: true
+
+helm:
+  name: wodby
+  source: oci://registry-1.docker.io/wodby/python
+  chart: oci://registry-1.docker.io/wodby/python
+  version: 0.1.0
+  configurations:
+  - name: python
+    labels: podLabels
+    annotations: podAnnotations
+    env: envVars
+    resources: resources
+    volumes: volumes
+    mounts: volumeMounts
+    sidecars: sidecars
