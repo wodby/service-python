@@ -39,7 +39,7 @@ build:
 links:
 - name: db
   title: DBMS
-  required: true
+  required: false
   env:
   - name: DB_HOST
     value: '{{link.database.host}}'
