@@ -34,7 +34,7 @@ build:
   - name: composer
     title: Composer boilerplate 
     repo: https://github.com/wodby/python-boilerplate
-    branch: master
+    branch: main
 
 links:
 - name: db
