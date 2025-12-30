@@ -25,7 +25,7 @@ endpoints:
   - name: python
     number: 8000
     main: true
-    type: tcp
+    protocol: tcp
 
 build:
   dockerfile: Dockerfile
