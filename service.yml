@@ -94,7 +94,7 @@ helm:
   chart: oci://registry-1.docker.io/wodby/python
   version: 0.1.0
   configurations:
-  - name: python
+  - container: python
     labels: podLabels
     annotations: podAnnotations
     env: envVars
