@@ -9,10 +9,10 @@ configuration for Python.
 - [Wodby service documentation](https://wodby.com/docs/2.0/services/)
 - [Service manifest reference](https://wodby.com/docs/2.0/services/template/)
 
-## Start with a template
+## Start with a boilerplate
 
-Use one of the source templates exposed by this service to start with
-compatible build configuration and Wodby CI:
+Use one of the boilerplates exposed by this service to start with compatible
+build configuration and Wodby CI:
 
 - [Python boilerplate](https://github.com/wodby/python-boilerplate)
 
@@ -27,13 +27,13 @@ compatible build configuration and Wodby CI:
 | Service name | `python` |
 | Type | Application service |
 | Versions | `3.14` by default; also available: `3.13`, `3.12`, `3.11`, `3.10` |
-| Workloads | `main` (Deployment), primary; scalable |
+| Workloads | `main` (Deployment, primary) |
 | Containers | `python` using `wodby/python`, build target |
 | Endpoints | `python`: HTTP 8080 (main) |
-| Service links | DBMS (`db`), optional, Mail Transfer Agent (`sendmail`), optional, Redis, optional |
-| Application build | Git source connection enabled; Dockerfile: `Dockerfile`; starters: Python boilerplate |
+| Service links | DBMS (`db`), optional; Mail Transfer Agent (`sendmail`), optional; Redis (`redis`), optional |
+| Application build | Git source connection enabled; Dockerfile: `Dockerfile`; boilerplates: [Python boilerplate](https://github.com/wodby/python-boilerplate) |
 | Helm | chart `oci://registry-1.docker.io/wodby/python`; version `0.1.0` |
-| Configuration | 1 integration slots |
+| Configuration and operations | 1 integration slots |
 
 ## Use this service
 

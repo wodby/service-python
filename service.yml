@@ -104,7 +104,7 @@ integrations:
 build:
   dockerfile: Dockerfile
   connect: true
-  templates:
+  boilerplates:
   - name: python
     title: Python boilerplate
     repo: https://github.com/wodby/python-boilerplate
