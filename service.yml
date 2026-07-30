@@ -114,7 +114,7 @@ helm:
   name: wodby
   source: oci://registry-1.docker.io/wodby/python
   chart: oci://registry-1.docker.io/wodby/python
-  version: 0.1.1
+  version: 0.1.2
   valueMappings:
     serviceAccountName: serviceAccount.name
     serviceAccountCreate: serviceAccount.create

@@ -32,7 +32,7 @@ build configuration and Wodby CI:
 | Endpoints | `python`: HTTP 8080 (main) |
 | Service links | DBMS (`db`), optional; Mail Transfer Agent (`sendmail`), optional; Redis (`redis`), optional |
 | Application build | Git source connection enabled; Dockerfile: `Dockerfile`; boilerplates: [Python boilerplate](https://github.com/wodby/python-boilerplate) |
-| Helm | chart `oci://registry-1.docker.io/wodby/python`; version `0.1.1` |
+| Helm | chart `oci://registry-1.docker.io/wodby/python`; version `0.1.2` |
 | Configuration and operations | 1 integration slots |
 
 ## Use this service
