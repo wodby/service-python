@@ -9,20 +9,19 @@ options:
 - version: '3.14'
   default: true
   eol: '2030-10-31T00:00:00+00:00'
-  tag: 3.14-0.30.9
+  tag: 3.14-r0
 - version: '3.13'
   eol: '2029-10-31T00:00:00+00:00'
-  tag: 3.13-0.30.9
+  tag: 3.13-r0
 - version: '3.12'
   eol: '2028-10-31T00:00:00+00:00'
-  tag: 3.12-0.30.9
+  tag: 3.12-r0
 - version: '3.11'
   eol: '2027-10-31T00:00:00+00:00'
-  tag: 3.11-0.30.9
+  tag: 3.11-r0
 - version: '3.10'
   eol: '2026-10-31T00:00:00+00:00'
-  tag: 3.10-0.30.9
-
+  tag: 3.10-r0
 endpoints:
 - name: python
   ports:
@@ -122,7 +121,7 @@ helm:
   name: wodby
   source: oci://registry-1.docker.io/wodby/python
   chart: oci://registry-1.docker.io/wodby/python
-  version: 0.2.1
+  version: 0.2.2
   valueMappings:
     serviceAccountName: serviceAccount.name
     serviceAccountCreate: serviceAccount.create
