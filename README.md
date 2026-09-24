@@ -62,3 +62,15 @@ wodby service validate-manifest service.yml --org <org-id>
 ```
 
 See the [service manifest reference](https://wodby.com/docs/2.0/services/template/) and the [managed services index](https://github.com/wodby/services).
+
+## Development workspaces
+
+`workspace-python prepare` runs `uv sync --locked` when `uv.lock` exists, or installs
+`requirements.txt` into a virtual environment. `workspace-python start` activates it
+and runs Gunicorn with its polling reloader against `GUNICORN_APP`. Override
+`WORKSPACE_PYTHON_COMMAND` for another server; `HOST` and `PORT` default to
+`0.0.0.0` and `8080`. Uvicorn commands receive `WATCHFILES_FORCE_POLLING=true` unless
+explicitly configured otherwise. Custom commands must implement their own reload
+behavior. Dependency changes require preparation again.
+
+Requires a runtime image declaring workspace contract version 1. Ordinary and development option tags must use matching revisions.
