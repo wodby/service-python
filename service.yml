@@ -172,4 +172,7 @@ workspace:
   - name: dependencies
     command: [workspace-python, prepare]
     timeoutSeconds: 1800
+  # Dependencies live in .wodby-workspace, which the image excludes itself.
+  # Running the application writes bytecode caches next to the source.
+  ignore: ['__pycache__/']
   reload: restart
