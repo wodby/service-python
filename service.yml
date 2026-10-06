@@ -3,6 +3,7 @@ type: service
 icon: python
 title: Python
 scalable: true
+guidance: GUIDANCE.md
 labels:
 - python
 options:
