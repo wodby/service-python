@@ -10,22 +10,22 @@ options:
 - version: '3.14'
   default: true
   eol: '2030-10-31T00:00:00+00:00'
-  tag: 3.14-r2
-  devTag: 3.14-dev-r2
+  tag: 3.14-r3
+  devTag: 3.14-dev-r3
 - version: '3.13'
   eol: '2029-10-31T00:00:00+00:00'
-  tag: 3.13-r2
-  devTag: 3.13-dev-r2
+  tag: 3.13-r3
+  devTag: 3.13-dev-r3
 - version: '3.12'
   eol: '2028-10-31T00:00:00+00:00'
-  tag: 3.12-r2
-  devTag: 3.12-dev-r2
+  tag: 3.12-r3
+  devTag: 3.12-dev-r3
 - version: '3.11'
   eol: '2027-10-31T00:00:00+00:00'
-  tag: 3.11-r2
-  devTag: 3.11-dev-r2
+  tag: 3.11-r3
+  devTag: 3.11-dev-r3
 - version: '3.10'
-  eol: '2026-10-31T00:00:00+00:00'
+  eol: '2026-10-01T00:00:00+00:00'
   tag: 3.10-r2
   devTag: 3.10-dev-r2
 endpoints:
