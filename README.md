@@ -26,7 +26,7 @@ build configuration and Wodby CI:
 | --- | --- |
 | Service name | `python` |
 | Type | Application service |
-| Versions | `3.14` by default; also available: `3.13`, `3.12`, `3.11`, `3.10` |
+| Versions | `3.14` by default; also available: `3.15`, `3.13`, `3.12`, `3.11`, `3.10` |
 | Workloads | `main` (Deployment, primary) |
 | Containers | `python` using `wodby/python`, build target |
 | Endpoints | `python`: HTTP 8080 (main) |

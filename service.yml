@@ -7,6 +7,10 @@ guidance: GUIDANCE.md
 labels:
 - python
 options:
+- version: '3.15'
+  eol: '2031-10-31T00:00:00+00:00'
+  tag: 3.15.1-r0
+  devTag: 3.15.1-dev-r0
 - version: '3.14'
   default: true
   eol: '2030-10-31T00:00:00+00:00'
