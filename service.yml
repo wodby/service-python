@@ -165,6 +165,10 @@ workloads:
   containers:
   - name: python
     image: wodby/python
+    resources:
+      request:
+        cpu: 20
+        memory: 208
     build: true
     helm:
       resources: resources
