@@ -10,28 +10,40 @@ options:
 - version: '3.15'
   eol: '2031-10-31T00:00:00+00:00'
   tag: 3.15-r9
+  digest: sha256:4624bec412a956f89afa277685fc024347d794d8d4f8455919eed5759bc55596
   devTag: 3.15-dev-r9
+  devDigest: sha256:a4863708631da9d08c277aa02cd98d45eb00787b2837ea3c3b0aa4a925fcfc58
 - version: '3.14'
   default: true
   eol: '2030-10-31T00:00:00+00:00'
   tag: 3.14-r9
+  digest: sha256:a5f42a7eabc0a0ae6b4b931e39d766e1cea167a78ff5330b683d241502030dd4
   devTag: 3.14-dev-r9
+  devDigest: sha256:8dcb4944e44dac980c5193192997c2f4c7eaaaddc92d6a4232f1a8afcff44fc0
 - version: '3.13'
   eol: '2029-10-31T00:00:00+00:00'
   tag: 3.13-r9
+  digest: sha256:36d8c663d16fc4b2f1425c1102aeccbbd6b4aac743c3ac43bd0c9e13aa8184cf
   devTag: 3.13-dev-r9
+  devDigest: sha256:f8fa0d5cf1594dbf6442327e453236c6952fcdc8f913cebb84f8c213cd8624e5
 - version: '3.12'
   eol: '2028-10-31T00:00:00+00:00'
   tag: 3.12-r9
+  digest: sha256:c9c07071ff3b3bb58f799a252b2dc83cb43e34ca701fdc1c85df0175e01f4356
   devTag: 3.12-dev-r9
+  devDigest: sha256:028536fd5c525742ed4621c6eb153bdbafcd1330f7f7e1cae839e59bc2b4c64d
 - version: '3.11'
   eol: '2027-10-31T00:00:00+00:00'
   tag: 3.11-r9
+  digest: sha256:8837357df2082e4bebabf7cba2a1989776eddc166bf55613c1fb45cf53a41969
   devTag: 3.11-dev-r9
+  devDigest: sha256:30ce3a3cb275837a64582fc5a79c3dffc5a3a6a16c46f41e9fdae9fafffd013e
 - version: '3.10'
   eol: '2026-10-01T00:00:00+00:00'
   tag: 3.10-r2
+  digest: sha256:7afb3f435ec4fe208a296861500d0b6f017d10c60db7d7298d4374825cb435f9
   devTag: 3.10-dev-r2
+  devDigest: sha256:815db228acc5e69ed31b2f0fe6a6b7b2bc383b0821a5155e741fe3ea0b2692e2
 endpoints:
 - name: python
   ports:
